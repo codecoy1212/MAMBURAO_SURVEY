@@ -18,7 +18,13 @@
 </head>
 <body>
 
-<div id="t_application"></div>
+<div id="t_application">
+    <br>
+    <div class="" style="font-size:16px;font-weight:bold;color:#000000;display:inline; margin-left:170px;">MAMBURAO SURVEY APP</div>
+    <a id="Button1" href="nene" style="padding: 10px; margin-left:535px;">NENE (N)</a>
+    <a id="Button2" href="philip" style="padding: 10px; margin-left:10px;">PHILIP (P)</a>
+    <a id="Button3" href="eric" style="padding: 10px;margin-left:10px;">ERIC (E)</a>
+</div>
 
 <script>
 
@@ -26,17 +32,15 @@
 
         var js_arr = <?php echo json_encode($arr);?>;
         console.log(js_arr);
+
+        if(js_arr == "")
+        $("#t_application").append(
+            `<div style="margin-top:100px; margin-left:550px; font-size:20px">No Surveys Yet.</div>`
+        );
+
         get_cat();
         function get_cat()
         {
-            $("#t_application").append(
-                `<br>
-                <div class="" style="font-size:16px;font-weight:bold;color:#000000;display:inline; margin-left:170px;">MAMBURAO SURVEY APP</div>
-                <a id="Button1" href="nene" style="padding: 10px; margin-left:535px;">NENE (N)</a>
-                <a id="Button2" href="philip" style="padding: 10px; margin-left:10px;">PHILIP (P)</a>
-                <a id="Button3" href="eric" style="padding: 10px;margin-left:10px;">ERIC (E)</a>`
-            );
-
             for (var i = 0; i < js_arr.length; i++) {
                 // console.log();
 

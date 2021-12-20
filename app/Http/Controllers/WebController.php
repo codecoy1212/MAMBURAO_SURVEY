@@ -13,7 +13,7 @@ class WebController extends Controller
         // ONLY FIRST CATEGORY FUNCTION (NENE)
 
         $vbl2 = DB::table('surveys')->orderBy('survey_id', 'desc')
-            // ->where('survey_id',21)
+            // ->where('survey_id',2211)
             ->join('answers','answers.survey_id','=','surveys.id')
             ->join('m_c_q_s','m_c_q_s.id','=','answers.m_c_q_s_id')
             // ->where('m_c_q_s.mcq',"N")
@@ -23,9 +23,13 @@ class WebController extends Controller
             ->select('surveys.id as sur_id','answers.question_id','m_c_q_s.mcq','users.table_name','database__names.db_name')
             ->get();
         // $vbl2 = json_decode($vbl2, true);
-        // return $vbl2;
+        // return $vbl2;z
 
         $arr = array();
+
+        if(count($vbl2) == 0)
+        return view('nene',compact('arr'));
+
         $nq = array();
         $gq = array();
         $uq = array();
@@ -121,7 +125,7 @@ class WebController extends Controller
         // ONLY SECOND CATEGORY FUNCTION (NENE)
 
         $vbl2 = DB::table('surveys')->orderBy('survey_id', 'desc')
-            // ->where('survey_id',2)
+            // ->where('survey_id',2121)
             ->join('answers','answers.survey_id','=','surveys.id')
             ->join('m_c_q_s','m_c_q_s.id','=','answers.m_c_q_s_id')
             // ->where('m_c_q_s.mcq',"N")
@@ -134,6 +138,10 @@ class WebController extends Controller
         // return $vbl2;
 
         $arr = array();
+
+        if(count($vbl2) == 0)
+        return view('eric',compact('arr'));
+
         $eq = array();
         $dq = array();
         $uq = array();
@@ -230,7 +238,7 @@ class WebController extends Controller
         // ONLY THIRD CATEGORY FUNCTION (NENE)
 
         $vbl2 = DB::table('surveys')->orderBy('survey_id', 'desc')
-            // ->where('survey_id',2)
+            // ->where('survey_id',22323)
             ->join('answers','answers.survey_id','=','surveys.id')
             ->join('m_c_q_s','m_c_q_s.id','=','answers.m_c_q_s_id')
             // ->where('m_c_q_s.mcq',"N")
@@ -243,6 +251,9 @@ class WebController extends Controller
         // return $vbl2;
 
         $arr = array();
+
+        if(count($vbl2) == 0)
+        return view('philip',compact('arr'));
 
         $pq = array();
         $tq = array();
