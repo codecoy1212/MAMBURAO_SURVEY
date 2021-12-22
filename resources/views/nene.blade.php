@@ -47,9 +47,9 @@
                 $("#t_application").append(
                     `<div style="margin-left:10px; margin-top:20px;">`+js_arr[i][1]+`</div>
                     <div style="margin-left:10px; margin-top:5px;"><b>`+js_arr[i][0]+`</b></div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:390px">N</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px">G</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px">U</div>
+                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:390px; color:#eb2a97;">N</div>
+                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px; color:#1f6310;">G</div>
+                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px; color:#616161;">U</div>
                     <br>`
                 );
 
@@ -91,7 +91,7 @@
 
                 var xValues = ["N", "G", "U"];
                 var yValues = [js_arr[i][2], js_arr[i][3], js_arr[i][4], 0];
-                var barColors = ["#fc449a", "blue","green"];
+                var barColors = ["#eb2a97", "#1f6310","#616161"];
 
                 new Chart('table2'+i+'', {
                 type: "bar",

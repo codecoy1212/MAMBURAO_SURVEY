@@ -47,13 +47,13 @@
                 $("#t_application").append(
                     `<div style="margin-left:10px; margin-top:20px;">`+js_arr[i][1]+`</div>
                     <div style="margin-left:10px; margin-top:5px;"><b>`+js_arr[i][0]+`</b></div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:490px">P</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px">T</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px">A</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px">L</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px">M</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px">V</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px">U</div>
+                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:490px; color:#2720b3;">P</div>
+                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px; color:#941304;">T</div>
+                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px; color:#257321;">A</div>
+                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px; color:#2f7580;">L</div>
+                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px; color:#ed6707;">M</div>
+                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px; color:#8315c2;">V</div>
+                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px; color:#636363;">U</div>
                     <br>`
                 );
 
@@ -136,7 +136,7 @@
                 var xValues = ["P","T","A","L","M","V","U"];
                 var yValues = [js_arr[i][2], js_arr[i][3], js_arr[i][4],
                 js_arr[i][5], js_arr[i][6], js_arr[i][7], js_arr[i][8],0];
-                var barColors = ["#fc449a", "blue","green","orange","black","red","grey"];
+                var barColors = ["#2720b3", "#941304","#257321","#2f7580","#ed6707","#8315c2","#636363"];
 
                 new Chart('table2'+i+'', {
                 type: "bar",
