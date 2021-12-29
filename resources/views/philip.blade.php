@@ -24,6 +24,8 @@
     <a id="Button1" href="nene" style="padding: 10px; margin-left:535px;">NENE (N)</a>
     <a id="Button2" href="philip" style="padding: 10px; margin-left:10px;">PHILIP (P)</a>
     <a id="Button3" href="eric" style="padding: 10px;margin-left:10px;">ERIC (E)</a>
+    <a id="Button3" href="{{route('dash')}}" style="background-color:black; padding: 10px;margin-left:10px;">Home</a>
+    <a id="Button3" href="{{route('logo')}}" style="background-color:black; padding: 10px;margin-left:10px;">Log Out</a>
 </div>
 
 <script>
