@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/',function (){
+    return redirect('login');
+});
 
 Route::get('/nene',[WebController::class,'index1'])->name('nene');
 Route::get('/philip',[WebController::class,'index2'])->name('philip');

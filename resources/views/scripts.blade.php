@@ -26,14 +26,14 @@
         <!-- BEGIN: Mobile Menu -->
         <div class="mobile-menu md:hidden">
             <div class="mobile-menu-bar">
-                <a href="{{route('dash')}}" class="flex mr-auto">
+                <a href="{{route('set')}}" class="flex mr-auto">
                     <div style="color:white" > <img src="" width="300px" alt="Survey App"></div>
                 </a>
                 <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
             </div>
             <ul class="border-t border-theme-24 py-5 hidden">
                     <li>
-                        <a href="{{route('dash')}}" class="menu">
+                        <a href="{{route('nene')}}" class="menu">
                             <div class="menu__icon"> <i data-feather="home"></i> </div>
                             <div class="menu__title"> Dashboard </div>
                         </a>
@@ -57,13 +57,13 @@
         <div class="flex">
             <!-- BEGIN: Side Menu -->
             <nav class="side-nav">
-                <a href="{{route('dash')}}" class="intro-x flex items-center pl-5 pt-4">
+                <a href="{{route('set')}}" class="intro-x flex items-center pl-5 pt-4">
                     <div style="color: white; font-weight:bold; font-size:20px;" > <img src="" width="170px" alt="Survey App"></div>
                 </a>
                 <div class="side-nav__devider my-6"></div>
                 <ul>
                     <li>
-                        <a href="{{route('dash')}}" class="side-menu @yield('pg_act_da')">
+                        <a href="{{route('nene')}}" class="side-menu @yield('pg_act_da')">
                             <div class="side-menu__icon"> <i data-feather="home"></i> </div>
                             <div class="side-menu__title"> Dashboard </div>
                         </a>
@@ -91,7 +91,7 @@
                 <div class="top-bar">
                     <!-- BEGIN: Breadcrumb -->
                     <div class="-intro-x breadcrumb mr-auto hidden sm:flex">
-                        <a href="{{route('dash')}}" class="">Mamburao &nbsp;</a>
+                        <a href="{{route('set')}}" class="">Mamburao &nbsp;</a>
                         <a href="@yield('first_add')" class="@yield('pg_act')">@yield('first_ref') &nbsp;</a>
                         <a href="@yield('second_add')" class="@yield('pg_act_2')">@yield('second_ref') &nbsp;</a>
                         <a href="@yield('third_add')" class="@yield('pg_act_3')">@yield('third_ref') &nbsp;</a>

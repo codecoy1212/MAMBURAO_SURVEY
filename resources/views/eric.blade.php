@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 
 <title>Mamburao Survey App</title>
-
+<link rel="icon" type="image/x-icon" href="{{asset('dist/favicon.png')}}">
 <link href="{{asset('dist/css/WEB_PROJECT_ABDU.css')}}" rel="stylesheet">
 
 <link href="{{asset('dist/css/index.css')}}" rel="stylesheet">
@@ -24,8 +24,8 @@
     <a id="Button1" href="nene" style="padding: 10px; margin-left:110px;">NENE (N)</a>
     <a id="Button2" href="philip" style="padding: 10px; margin-left:10px;">PHILIP (P)</a>
     <a id="Button3" href="eric" style="padding: 10px;margin-left:10px;">ERIC (E)</a>
-    <a id="Button3" href="{{route('dash')}}" style="background-color:black; padding: 10px;margin-left:100px;">Home</a>
-    <a id="Button3" href="{{route('logo')}}" style="background-color:black; padding: 10px;margin-left:10px;">Log Out</a>
+    <a id="Button3" href="{{route('set')}}" style="background-color:#911aa3; padding: 10px;margin-left:100px;">Home</a>
+    <a id="Button3" href="{{route('logo')}}" style="background-color:#911aa3; padding: 10px;margin-left:10px;">Log Out</a>
 </div>
 
 <script>
@@ -84,10 +84,10 @@
 
                 $("#t_application").append(
                     `<br>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:142px;">`+js_arr[i][2]+`</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:34px">`+js_arr[i][3]+`</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:34px">`+js_arr[i][4]+`</div>
-                    <canvas id="table2`+i+`" style="height:250px;max-width:180px; margin-top:10px; margin-left:109px;"></canvas>
+                    <div style="position:absolute; font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:152px;">`+js_arr[i][2]+`</div>
+                    <div style="position:absolute; font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:200px">`+js_arr[i][3]+`</div>
+                    <div style="position:absolute; font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:247px">`+js_arr[i][4]+`</div>
+                    <canvas id="table2`+i+`" style="height:250px;max-width:180px; margin-top:20px; margin-left:109px;"></canvas>
                     <div id="Line1" style="width:685px;"></div>`
                 );
 

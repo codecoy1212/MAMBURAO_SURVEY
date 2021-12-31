@@ -4,7 +4,7 @@
 
 <head>
 <meta charset="utf-8">
-
+<link rel="icon" type="image/x-icon" href="{{asset('dist/favicon.png')}}">
 <title>Mamburao Survey App</title>
 
 <link href="{{asset('dist/css/WEB_PROJECT_ABDU.css')}}" rel="stylesheet">
@@ -24,8 +24,8 @@
     <a id="Button1" href="nene" style="padding: 10px; margin-left:535px;">NENE (N)</a>
     <a id="Button2" href="philip" style="padding: 10px; margin-left:10px;">PHILIP (P)</a>
     <a id="Button3" href="eric" style="padding: 10px;margin-left:10px;">ERIC (E)</a>
-    <a id="Button3" href="{{route('dash')}}" style="background-color:black; padding: 10px;margin-left:10px;">Home</a>
-    <a id="Button3" href="{{route('logo')}}" style="background-color:black; padding: 10px;margin-left:10px;">Log Out</a>
+    <a id="Button3" href="{{route('set')}}" style="background-color:#911aa3; padding: 10px;margin-left:10px;">Home</a>
+    <a id="Button3" href="{{route('logo')}}" style="background-color:#911aa3; padding: 10px;margin-left:10px;">Log Out</a>
 </div>
 
 <script>
@@ -124,14 +124,14 @@
 
                 $("#t_application").append(
                     `<br>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:128px;">`+js_arr[i][2]+`</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:30px">`+js_arr[i][3]+`</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:30px">`+js_arr[i][4]+`</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:30px;">`+js_arr[i][5]+`</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:30px">`+js_arr[i][6]+`</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:30px">`+js_arr[i][7]+`</div>
-                    <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:30px">`+js_arr[i][8]+`</div>
-                    <canvas id="table2`+i+`" style="height:250px;max-width:350px; margin-top:10px; margin-left:93px;"></canvas>
+                    <div style="position:absolute; font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:135px;">`+js_arr[i][2]+`</div>
+                    <div style="position:absolute; font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:180px">`+js_arr[i][3]+`</div>
+                    <div style="position:absolute; font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:224px">`+js_arr[i][4]+`</div>
+                    <div style="position:absolute; font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:267px;">`+js_arr[i][5]+`</div>
+                    <div style="position:absolute; font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:312px">`+js_arr[i][6]+`</div>
+                    <div style="position:absolute; font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:357px">`+js_arr[i][7]+`</div>
+                    <div style="position:absolute; font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:402px">`+js_arr[i][8]+`</div>
+                    <canvas id="table2`+i+`" style="height:250px;max-width:350px; margin-top:20px; margin-left:93px;"></canvas>
                     <div id="Line1" style="width:1175px;"></div>`
                 );
 

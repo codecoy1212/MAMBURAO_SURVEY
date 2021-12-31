@@ -1,16 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6395" height="1156" viewBox="0 0 6395 1156">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6395" height="1079" viewBox="0 0 6395 1079">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Rectangle_73" data-name="Rectangle 73" width="6395" height="1156" transform="translate(-5391)" fill="#fff"/>
+      <rect id="Rectangle_73" data-name="Rectangle 73" width="6395" height="1079" transform="translate(-5391)" fill="#fff"/>
     </clipPath>
-    <linearGradient id="linear-gradient" x1="0.602" y1="0.5" x2="0.96" y2="0.877" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#d89d62"/>
-      <stop offset="1" stop-color="#ef6923"/>
+    <linearGradient id="linear-gradient" x1="0.831" y1="0.047" x2="0.976" y2="0.958" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0719da"/>
+      <stop offset="1" stop-color="#f90081"/>
     </linearGradient>
   </defs>
-  <g id="bg-login-page" transform="translate(5391)" clip-path="url(#clip-path)">
-    <g id="Group_118" data-name="Group 118" transform="translate(-5367.729 -24.367)">
-      <path id="Union_6" data-name="Union 6" d="M-2631.1,1158.621v-1.714H-8230.9V.024h5599.8V0h759.7s-187.845,211.469-91.626,523.558c49.167,159.474,96.309,274.489,104.683,387.833,7.979,108.014-57.98,216.035-168.644,272.343-65.858,33.512-170.28,41.109-248.756,41.11C-2466.93,1224.841-2631.1,1158.621-2631.1,1158.621Z" transform="translate(8230.9)" fill="url(#linear-gradient)"/>
+  <g id="adminbg" transform="translate(5391)" clip-path="url(#clip-path)">
+    <g id="Group_118" data-name="Group 118" transform="translate(-419.333 -1.126)">
+      <path id="Path_142" data-name="Path 142" d="M6271.73-6.176s-222.478,187.809-55.349,583.254c44.957,106.375,81.514,205.964,84.521,277,8.164,192.764-156.046,268.564-156.046,268.564l-653.53-26.8L5475.06-21.625Z" transform="translate(-4876.383)" fill="#f1f5f8"/>
+      <path id="Union_6" data-name="Union 6" d="M-2631.1,1081.8v-1.6H-8230.9V.022h5599.8V0h759.7s-187.845,197.448-91.626,488.844c49.167,148.9,96.309,256.289,104.683,362.118,7.979,100.852-57.98,201.711-168.644,254.286-65.858,31.29-170.28,38.383-248.756,38.384C-2466.93,1143.63-2631.1,1081.8-2631.1,1081.8Z" transform="translate(3282.505 -21.625)" fill="url(#linear-gradient)"/>
     </g>
   </g>
 </svg>

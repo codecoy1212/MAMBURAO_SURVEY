@@ -23,33 +23,33 @@
                 <div class="grid grid-cols-12 gap-6 mt-5 xl:ml-20 xl:mr-20">
                     <a class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y" href="{{route('table_d',['id' => 1])}}">
                         <div class="zoom-in" >
-                            <div class="box p-6 border-theme-1 border-2">
+                            <div class="box p-6 border-theme-1 border-2" style="background-color: #F80287">
                                 <div class="flex">
                                     <i style="width:43px; height:43px;" data-feather="users" class="report-box__icon text-theme-1 m-auto"></i>
                                 </div>
-                                <div class="text-gxl font-bold leading-8 mt-6">NENE (N)</div>
+                                <div class="text-gxl font-bold leading-8 mt-6" style="color:white">NENE (N)</div>
                             </div>
                         </div>
                     </a>
                     <a class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y" href="{{route('table_d',['id' => 2])}}">
                         <div class="zoom-in">
-                            <div class="box p-6 border-theme-1 border-2">
+                            <div class="box p-6 border-theme-1 border-2" style="background-color: #030CD3">
                                 <div class="flex">
                                     <i style="width:43px; height:43px;" data-feather="users" class="report-box__icon text-theme-1 m-auto"></i>
 
                                 </div>
-                                <div class="text-gxl font-bold leading-8 mt-6">PHILIP (P)</div>
+                                <div class="text-gxl font-bold leading-8 mt-6" style="color:white">PHILIP (P)</div>
                             </div>
                         </div>
                     </a>
                     <a class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y" href="{{route('table_d',['id' => 3])}}">
                         <div class="zoom-in">
-                            <div class="box p-6 border-theme-1 border-2">
+                            <div class="box p-6 border-theme-1 border-2" style="background-color: #01A109">
                                 <div class="flex">
                                     <i style="width:43px; height:43px;" data-feather="users" class="report-box__icon text-theme-1 m-auto"></i>
 
                                 </div>
-                                <div class="text-gxl font-bold leading-8 mt-6">ERIC (E)</div>
+                                <div class="text-gxl font-bold leading-8 mt-6" style="color:white">ERIC (E)</div>
                             </div>
                         </div>
                     </a>

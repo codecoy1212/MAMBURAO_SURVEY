@@ -12,7 +12,7 @@ class LoginOutController extends Controller
     public function index()
     {
         if(session()->get('s_uname'))
-            return redirect('dashboard');
+            return redirect('nene');
         else
             return view('login');
     }
@@ -32,7 +32,7 @@ class LoginOutController extends Controller
             {
                 session()->put('s_uname', $verification->username);
 
-                return redirect('dashboard');
+                return redirect('nene');
             }
             else
             {

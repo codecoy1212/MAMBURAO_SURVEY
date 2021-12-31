@@ -17,18 +17,19 @@ class WebController extends Controller
         {
             // ONLY FIRST CATEGORY FUNCTION (NENE)
 
-            $vbl2 = DB::table('surveys')->orderBy('survey_id', 'desc')
+            $vbl2 = DB::table('surveys')
             // ->where('survey_id',2211)
             ->join('answers','answers.survey_id','=','surveys.id')
+            ->orderBy('user_id', 'asc')->orderBy('survey_id', 'asc')
             ->join('m_c_q_s','m_c_q_s.id','=','answers.m_c_q_s_id')
             // ->where('m_c_q_s.mcq',"N")
             ->join('users','users.id','=','answers.user_id')
             ->join('database__names','database__names.id','=','users.database__name_id')
             ->where('database__names.category_id',1)
-            ->select('surveys.id as sur_id','answers.question_id','m_c_q_s.mcq','users.table_name','database__names.db_name')
+            ->select('surveys.id as sur_id','answers.question_id','m_c_q_s.mcq','users.table_name','database__names.db_name','answers.user_id')
             ->get();
             // $vbl2 = json_decode($vbl2, true);
-            // return $vbl2;z
+            // return $vbl2;
 
             $arr = array();
 
@@ -137,15 +138,16 @@ class WebController extends Controller
         {
             // ONLY SECOND CATEGORY FUNCTION (NENE)
 
-            $vbl2 = DB::table('surveys')->orderBy('survey_id', 'desc')
+            $vbl2 = DB::table('surveys')
             // ->where('survey_id',2121)
             ->join('answers','answers.survey_id','=','surveys.id')
+            ->orderBy('user_id', 'asc')->orderBy('survey_id', 'asc')
             ->join('m_c_q_s','m_c_q_s.id','=','answers.m_c_q_s_id')
             // ->where('m_c_q_s.mcq',"N")
             ->join('users','users.id','=','answers.user_id')
             ->join('database__names','database__names.id','=','users.database__name_id')
             ->where('database__names.category_id',3)
-            ->select('surveys.id as sur_id','answers.question_id','m_c_q_s.mcq','users.table_name','database__names.db_name')
+            ->select('surveys.id as sur_id','answers.question_id','m_c_q_s.mcq','users.table_name','database__names.db_name','answers.user_id')
             ->get();
             // $vbl2 = json_decode($vbl2, true);
             // return $vbl2;
@@ -255,15 +257,16 @@ class WebController extends Controller
         {
             // ONLY THIRD CATEGORY FUNCTION (NENE)
 
-            $vbl2 = DB::table('surveys')->orderBy('survey_id', 'desc')
+            $vbl2 = DB::table('surveys')
             // ->where('survey_id',22323)
             ->join('answers','answers.survey_id','=','surveys.id')
+            ->orderBy('user_id', 'asc')->orderBy('survey_id', 'asc')
             ->join('m_c_q_s','m_c_q_s.id','=','answers.m_c_q_s_id')
             // ->where('m_c_q_s.mcq',"N")
             ->join('users','users.id','=','answers.user_id')
             ->join('database__names','database__names.id','=','users.database__name_id')
             ->where('database__names.category_id',2)
-            ->select('surveys.id as sur_id','answers.question_id','m_c_q_s.mcq','users.table_name','database__names.db_name')
+            ->select('surveys.id as sur_id','answers.question_id','m_c_q_s.mcq','users.table_name','database__names.db_name','answers.user_id')
             ->get();
             // $vbl2 = json_decode($vbl2, true);
             // return $vbl2;

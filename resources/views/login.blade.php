@@ -9,7 +9,7 @@
         <meta name="keywords" content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
         <meta name="author" content="LEFT4CODE">
         <title>Mamburao - Login</title>
-        <link rel="icon" type="image/x-icon" href="{{asset('dist/logof.ico')}}">
+        <link rel="icon" type="image/x-icon" href="{{asset('dist/favicon.png')}}">
         <!-- BEGIN: CSS Assets-->
         <link rel="stylesheet" href="{{asset('dist/css/app.css')}}" />
         <!-- END: CSS Assets-->
@@ -32,10 +32,7 @@
 
                     </a>
                     <div class="my-auto">
-                        <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10 mb-20" style="font-size: 60px">
-                            Mamburao <br> Survey App
-                        </div>
-                         {{-- <img alt="LABOUR CONNECT" class="-intro-x w-1/2 -mt-16" src="{{asset('dist/images/icon.png')}}"> --}}
+                         <img alt="LABOUR CONNECT" class="-intro-x w-1/2 -mt-16" src="{{asset('dist/images/icon.png')}}">
                         <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10">
                             A few more clicks to
                             <br>
@@ -55,15 +52,15 @@
                         <div class="intro-x mt-2 text-gray-500 xl:hidden text-center">A few more clicks to sign in to your account.</div>
                         <div class="intro-x mt-8">
                             <span style="color: red"></span>
-                            <input type="text" name="username" class="intro-x login__input input input--lg border-theme-1 border-2 block" placeholder="Username">
-                            <input type="password" name="password" class="intro-x login__input input input--lg border-theme-1 border-2 block mt-4" placeholder="Password">
+                            <input type="text" name="username" class="intro-x login__input input input--lg border-theme-4 border-2 block" placeholder="Username">
+                            <input type="password" name="password" class="intro-x login__input input input--lg border-theme-4 border-2 block mt-4" placeholder="Password">
                         </div>
                         <div class="intro-x flex text-gray-700 dark:text-gray-600 text-xs sm:text-sm mt-4">
 
 
                         </div>
                         <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
-                            <button class="button button--lg w-full xl:w-32 text-white bg-theme-1 xl:mr-3">Login</button>
+                            <button class="button button--lg w-full xl:w-32 text-white xl:mr-3" style="background-color: #911aa3">Login</button>
 
                         </div>
                         <div class="intro-x mt-10 xl:mt-24 text-gray-700 dark:text-gray-600 text-center xl:text-left">
