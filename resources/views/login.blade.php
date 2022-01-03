@@ -60,7 +60,7 @@
 
                         </div>
                         <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
-                            <button class="button button--lg w-full xl:w-32 text-white xl:mr-3" style="background-color: #911aa3">Login</button>
+                            <button class="button button--lg w-full xl:w-32 text-white xl:mr-3" style="background-color: #fd0390">Login</button>
 
                         </div>
                         <div class="intro-x mt-10 xl:mt-24 text-gray-700 dark:text-gray-600 text-center xl:text-left">

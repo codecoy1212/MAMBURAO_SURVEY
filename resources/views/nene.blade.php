@@ -24,7 +24,7 @@
     <a id="Button1" href="nene" style="padding: 10px; margin-left:110px;">NENE (N)</a>
     <a id="Button2" href="philip" style="padding: 10px; margin-left:10px;">PHILIP (P)</a>
     <a id="Button3" href="eric" style="padding: 10px;margin-left:10px;">ERIC (E)</a>
-    <a id="Button3" href="{{route('set')}}" style="background-color:#911aa3; padding: 10px;margin-left:100px;">Home</a>
+    <a id="Button3" href="{{route('set')}}" style="background-color:#fd0390; padding: 10px;margin-left:100px;">Home</a>
     <a id="Button3" href="{{route('logo')}}" style="background-color:#911aa3; padding: 10px;margin-left:10px;">Log Out</a>
 </div>
 
