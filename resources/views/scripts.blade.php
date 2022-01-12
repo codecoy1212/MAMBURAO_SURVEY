@@ -13,10 +13,15 @@
         <meta name="keywords" content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
         <meta name="author" content="LEFT4CODE">
           <!-- BEGIN: CSS Assets-->
+
+        <link rel="stylesheet" href="{{asset('dist/css/login_style.css')}}" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
         <link rel="stylesheet" href="{{asset('dist/css/app.css')}}" />
         <link rel="stylesheet" href="{{asset('plugins/toastr/toastr.min.css')}}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
 
 
         <!-- END: CSS Assets-->
@@ -39,9 +44,15 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('dash')}}" class="menu">
+                        <a href="{{route('set')}}" class="menu">
                             <div class="menu__icon"> <i data-feather="settings"></i> </div>
                             <div class="menu__title"> Settings </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('acs')}}" class="menu">
+                            <div class="menu__icon"> <i data-feather="key"></i> </div>
+                            <div class="menu__title"> Reset Admin Account </div>
                         </a>
                     </li>
                     <li>
@@ -72,6 +83,12 @@
                         <a href="{{route('set')}}" class="side-menu @yield('pg_act_se')">
                             <div class="side-menu__icon"> <i data-feather="settings"></i> </div>
                             <div class="side-menu__title"> Settings </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('acs')}}" class="side-menu @yield('pg_act_ra')">
+                            <div class="side-menu__icon"> <i data-feather="key"></i> </div>
+                            <div class="side-menu__title"> Reset Admin Account </div>
                         </a>
                     </li>
                     <li>

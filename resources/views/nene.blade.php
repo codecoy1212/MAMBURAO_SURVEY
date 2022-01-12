@@ -10,6 +10,7 @@
 <link href="{{asset('dist/css/WEB_PROJECT_ABDU.css')}}" rel="stylesheet">
 
 <link href="{{asset('dist/css/index.css')}}" rel="stylesheet">
+<link href="{{asset('dist/css/login_style.css')}}" rel="stylesheet">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -18,12 +19,19 @@
 </head>
 <body>
 
+
 <div id="t_application">
     <br>
     <div class="" style="font-size:16px;font-weight:bold;color:#000000;display:inline; margin-left:100px;">MAMBURAO SURVEY APP</div>
     <a id="Button1" href="nene" style="padding: 10px; margin-left:110px;">NENE (N)</a>
     <a id="Button2" href="philip" style="padding: 10px; margin-left:10px;">PHILIP (P)</a>
     <a id="Button3" href="eric" style="padding: 10px;margin-left:10px;">ERIC (E)</a>
+    <div class="dropdown">
+        <button class="dropbtn">Municipality</button>
+        <div class="dropdown-content">
+        <a href="{{route('mbr')}}">Mamburao</a>
+        </div>
+    </div>
     <a id="Button3" href="{{route('set')}}" style="background-color:#fd0390; padding: 10px;margin-left:100px;">Home</a>
     <a id="Button3" href="{{route('logo')}}" style="background-color:#911aa3; padding: 10px;margin-left:10px;">Log Out</a>
 </div>
@@ -47,7 +55,9 @@
                 // console.log();
 
                 $("#t_application").append(
-                    `<div style="margin-left:10px; margin-top:20px;">`+js_arr[i][1]+`</div>
+                    `<div style="position:absolute; margin-top:175px; margin-left:695px; font-weight:bold; font-size:23px; color:red;">`+js_arr[i][9]+`</div>
+                    <div style="position:absolute; margin-top:200px; margin-left:695px; font-weight:bold; font-size:20px">`+js_arr[i][8]+`</div>
+                    <div style="margin-left:10px; margin-top:20px;">`+js_arr[i][1]+`</div>
                     <div style="margin-left:10px; margin-top:5px;"><b>`+js_arr[i][0]+`</b></div>
                     <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:390px; color:#eb2a97;">N</div>
                     <div style="font-size:19px;font-weight:bold;color:#000000; display:inline; margin-left:90px; color:#1f6310;">G</div>

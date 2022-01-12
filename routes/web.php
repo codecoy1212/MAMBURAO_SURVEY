@@ -28,6 +28,9 @@ Route::get('/specific',[WebController::class,'table_show']);
 Route::get('/specific/update',[WebController::class,'update_pass']);
 Route::put('/specific/update/done',[WebController::class,'pass_changed']);
 Route::get('/settings',[WebController::class,'index4'])->name('set');
+Route::get('/account_settings',[WebController::class,'acc_sett'])->name('acs');
+Route::put('/update_password',[WebController::class,'up_pass']);
+Route::get('/mamburao',[WebController::class,'all_sur'])->name('mbr');
 
 Route::get('/login',[LoginOutController::class,'index']);
 Route::post('/login',[LoginOutController::class,'loggingIn'])->name('log');
